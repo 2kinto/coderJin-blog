@@ -1,4 +1,4 @@
-//首页canvas
+// 首页canvas
 document.addEventListener('touchmove', function (e) {
     e.preventDefault()
 })
@@ -45,8 +45,19 @@ document.onclick = i
 document.ontouchstart = i
 i()
 
-var navIcon = document.querySelector('#menu');
-var navStyle = document.getElementById('nav-ul').style;
-navIcon.onclick = function(){
-    (navStyle.display=='') ? navStyle.display ='block' : navStyle.display = '';
-}
+
+// nav动画
+$(function() {
+    var nav = $('.nav');
+    $('.menu-button').click(function () {
+        if (nav.hasClass('rotate-hid-nav')) {
+            nav.removeClass('rotate-hid-nav');
+            nav.addClass('show-nav');
+        }else {
+            nav.toggleClass('show-nav');
+        }
+    });
+    $('.nav-close').click(function () {
+        nav.addClass('rotate-hid-nav');
+    });
+});

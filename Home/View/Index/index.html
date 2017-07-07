@@ -2,30 +2,43 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
-    <title>CoderJin的个人博客</title>
+    <title>CoderJin-blog</title>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="keywords" content="javascript,php,css3,blog,hip-hop,coder,前端，全栈">
     <meta name="description" content="CoderJin,一个爱hip-hop的全栈工程师">
     <link rel="stylesheet" href="./Public/Home/CSS/normalize.min.css">
     <link rel="stylesheet" href="./Public/Home/CSS/index.css">
     <link rel="stylesheet" href="./Public/Home/CSS/icon/iconfont.css">
+    <script src="./Public/Home/JS/jquery-3.2.1.min.js" charset="utf-8"></script>
 </head>
 <body>
 <div>
-    <div id="menu"><a id="toggle" href="#"><i class="iconfont icon-navlist"></i></a>
-        <ul id="nav-ul">
-            <li><a href="#introduction">个人简介</a></li>
-            <li><a href="#application">博文</a></li>
-            <li><a href="#request">笔记</a></li>
-            <li><a href="#context">足迹</a></li>
+    <div class="nav">
+        <a href="#" class="nav-close">
+            <span class="hidden">Close</span>
+        </a>
+        <a href="https://github.com/JT-Phantasy"><img style="position: absolute; top: 0; left: 0; border: 0;" src="./Public/Home/IMGS/githubRedL.png"></a>
+        <ul>
+            <li class="nav- nav-current"><a href="#">Home</a></li>
+            <li class="nav-php"><a href="#">Front-End</a></li>
+            <li class="nav-laravel"><a href="#">Back-End</a></li>
+            <li class="nav-reactnative"><a href="#">Env Config</a></li>
+            <li class="nav-yii"><a href="#">Bug Record</a></li>
+            <li class="nav-c-"><a href="#">My notes</a></li>
+            <li class="nav-redis-"><a href="#">My life</a></li>
         </ul>
     </div>
     <canvas></canvas>
+
+    <nav class="main-nav clearfix">
+        <a class="menu-button" href="#"><span class="word iconfont icon-more_android">Menu</span></a>
+    </nav>
+
     <div id="title">
         <div id="logo">CoderJin</div>
-        <div id="tagline">断，舍，离</div>
+        <div id="tagline">断 舍 离</div>
     </div>
 </div>
-<script src="./Public/Home/JS/index.js"></script>
+<script src="./Public/Home/JS/indexcvs.js"></script>
 </body>
 </html>
