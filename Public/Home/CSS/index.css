@@ -1,0 +1,104 @@
+* {
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font: 17px/1.5 "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    background: white;
+    margin: 0;
+    color: #33333d;
+    overflow: hidden;
+    /*height: 800px;*/
+    /*overflow-y: scroll;*/
+    /*overflow-x: hidden;*/
+}
+
+#title {
+    -webkit-user-select: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    text-align: center;
+    width: 100%;
+}
+
+#logo {
+    font: 80px 'Italiana', sans-serif;
+}
+
+#tagline {
+    font-size: 16px;
+}
+
+#menu {
+    position: fixed;
+    top: 35px;
+    left: 30px;
+    z-index: 50;
+}
+
+#nav-ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    padding: 5px;
+    background: rgba(255,255,255,.9);
+    border-radius: 2px;
+    border: 1px solid transparent;
+    z-index: 5;
+    socor:pointer;
+}
+
+#menu a {
+  color: black;
+}
+
+#nav-ul {
+    display: none;
+    position: absolute;
+    top: 14px;
+    left: 23px;
+    margin: 0;
+    border: 1px solid #efefef;
+    border-bottom: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 25px;
+    background: rgba(255,255,255,.95);
+    z-index: -1;
+    box-shadow: 0 1px 3px 0 #eee;
+}
+
+ul li {
+    font-size: .8em;
+    padding: 10px 0;
+    padding-left: 8px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/*清除浮动*/
+.clearfix:after{
+content: "";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+font-size:0;
+}
+.clearfix { *zoom:1;}
+
